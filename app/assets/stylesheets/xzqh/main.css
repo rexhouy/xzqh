@@ -1,0 +1,21 @@
+.xzqh-selecter {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1080;
+  display: none;
+  width: 100%;
+  overflow: hidden;
+  outline: 0;
+}
+.xzqh-selecter .list-group {
+  height: 350px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+#xzqh_backdrop {
+  display: none;
+}
+#xzqh_selects {
+  padding-left: 9px;
+}

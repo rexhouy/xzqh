@@ -1,0 +1,29 @@
+<div id="xzqh_backdrop" class="modal-backdrop" style="z-index:1060">
+  <!-- bootstrap modal z-index:1050-->
+</div>
+
+<div class="xzqh-selecter bg-white p-2">
+  <div class="border-bottom pb-2">
+    <button type="button" class="close" onclick="xzqh.close()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    <div class="text-center">选择所在地区</div>
+  </div>
+  <div class="d-flex pt-2 invisible" id="xzqh_selects">
+
+  </div>
+  <div class="text-center">
+    <div class="spinner-border" role="status" id="xzqh_spinner">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>
+  <ul class="list-group list-group-flush mt-3" id="xzqh_options">
+  </ul>
+</div>
+
+<script type="text/template" id="xzqh_option_template">
+  <li class="list-group-item" onclick="xzqh.select('{{code}}', false)">{{name}}</li>
+</script>
+<script type="text/template" id="xzqh_select_template">
+  <button class="btn {{color}}" onclick="xzqh.select('{{parentCode}}', false)">{{name}}</button>
+</script>
