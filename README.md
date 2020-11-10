@@ -1,8 +1,17 @@
 # Xzqh
 
-Short description and motivation.
+Rails 行政区划选择控件
 
 ## Usage
+
+application.js:
+//= require xzqh/main.js
+
+application.css:
+\*= require xzqh/main.css
+
+routes.rb:
+mount Xzqh::Engine => "/"
 
 javascript:
 xzqh.open(["云南省", "昆明市", "五华区"], function(d) {console.log(d)} )
